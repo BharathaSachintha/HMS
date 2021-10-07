@@ -1,0 +1,73 @@
+<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.Mobile.master.cs" Inherits="SOAPS.Site_Mobile" %>
+<%--<%@ Register Src="~/ViewSwitcher.ascx" TagPrefix="friendlyUrls" TagName="ViewSwitcher" %>--%>
+
+<%--<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta name="viewport" content="width=device-width" />
+    <title></title>
+    <asp:ContentPlaceHolder runat="server" ID="HeadContent" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <h1>Mobile Master Page</h1>
+        <asp:ContentPlaceHolder runat="server" ID="FeaturedContent" />
+        <section class="content-wrapper main-content clear-fix">
+            <asp:ContentPlaceHolder runat="server" ID="MainContent" />
+        </section>
+        <friendlyUrls:ViewSwitcher runat="server" />
+    </div>
+    </form>
+</body>
+</html>--%>
+
+<!DOCTYPE html>
+
+<html>
+<head runat="server">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <title>Ruwana Acedemy | Fee Management</title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="Theme/plugins/fontawesome-free/css/all.min.css">
+    <!-- IonIcons -->
+    <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- Theme style -->
+    <link rel="stylesheet" href="Theme/dist/css/adminlte.min.css">
+    <!-- Google Font: Source Sans Pro -->
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+    <!-- validationEngine -->
+    <link rel="stylesheet" href="Theme/dist/css/validationEngine.jquery.css" />
+    <!-- alertify -->
+    <link rel="stylesheet" href="Theme/plugins/alertifyJs/css/alertify.min.css" />
+    <link rel="stylesheet" href="Theme/plugins/alertifyJs/css/themes/default.min.css" />
+    <link rel="stylesheet" href="Theme/dist/css/bootstrap.override.min.css" />
+    <link href="Theme/dist/css/datepicker3.css" rel="stylesheet" />
+
+    <!-- Gmap -->
+    <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC6v5-2uaq_wusHDktM9ILcqIrlPtnZgEk&sensor=false"></script>
+</head>
+<body class="hold-transition login-page">
+    <div class="login-box">
+        <div class="login-logo">
+            <a href="#"><b>Ruwana </b>Academy</a>
+        </div>
+        <asp:ContentPlaceHolder ID="body" runat="server">
+        </asp:ContentPlaceHolder>
+    </div>
+
+    <!-- jQuery 2.2.3 -->
+    <script src='<%=ResolveClientUrl("plugins/jQuery/jquery-2.2.3.min.js")%>' type="text/javascript"></script>
+    <!-- jQuery UI 1.11.4 -->
+    <script src='<%=ResolveClientUrl("dist/js/jquery-ui.min.js")%>' type="text/javascript"></script>
+    <!-- Validation Engine -->
+    <script src='<%=ResolveClientUrl("dist/js/jquery.validationEngine-en.js")%>' type="text/javascript"></script>
+    <script src='<%=ResolveClientUrl("dist/js/jquery.validationEngine.js")%>' type="text/javascript"></script>
+</body>
+</html>
